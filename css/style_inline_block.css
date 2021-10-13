@@ -1,0 +1,59 @@
+/*reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Montserrat',sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,p,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* theme */
+header h1{
+    text-align: center;
+    background-color: rgb(100, 5, 5);
+    line-height: 6.5rem;
+    font-weight: 200;
+    color: #fff;
+}
+main{
+    max-width: 90.0rem;
+    margin: 5.0rem auto;
+    border: solid .1rem #222;
+    
+}
+main ul li img{
+    display: block;
+    width: 100%;
+}
+main ul{ /* regler les marges et padding*/
+    padding: 1.0rem 0 0 1.0rem;
+    font-size: 0; /* supprime les espaces entre les listes */
+}
+main ul li{ /* ajouter un display : inline-block 4 images */
+   display: inline-block; /* contient un espacement de 4.5px */
+    width: calc(100% / 4 - 1rem);
+    margin:0 1rem 1rem 0;
+
+}
+main ul li:nth-of-type(5), main ul li:nth-of-type(6){
+ 
+    /* ligne avec 2 images */
+    width: calc(100% / 2 - 1rem)
+}
+main ul li:last-child{
+    
+    /* ligne avec 1 image */
+    width: calc(100% / 1 - 1rem)
+}
+footer{
+    text-align: center;
+}
